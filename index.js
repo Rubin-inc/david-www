@@ -460,7 +460,7 @@ app.use(function (req, res) {
   res.type("txt").send("Not found")
 })
 
-var port = process.env.PORT || config.port || 1337
+var port = process.env.PORT || config.site.port || 1337
 
 app.listen(port)
 
